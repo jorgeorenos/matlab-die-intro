@@ -31,3 +31,9 @@ set(fH(1), s)
 get(gcf)
 get(gca)
 get(p1(1))
+
+
+figure;
+axes;
+
+legend('h(1)label', 'h(2)label');
