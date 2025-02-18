@@ -6,7 +6,8 @@ construcción de un gráfico simple que contenga algunas líneas, legenda,
 título principal y en los ejes, entre otras adiciones.
 %}
 
-% Comenzamos definiendo en espacio en el que vamos a gráficar
+%
+ Comenzamos definiendo en espacio en el que vamos a gráficar
 figure();
 
 set(gcf,...
@@ -18,7 +19,6 @@ ax = axes();
 
 % Ahora haremos nuestro primer gráfico
 figure();
-
 set(gcf,...
     'defaultaxesfontsize', 12, ...
     'Position', [350 120 1200 700]);
@@ -28,7 +28,7 @@ ax = axes();
 x = linspace(1,10);
 
 plot(x, sin(x), 'Linewidth', 1.5, 'marker', 'o', 'Markersize', 5,...
-    'Color', 'b', 'MarkerFaceColor', [0.969 0.816 0.125],...
+    'Color', '#e30249', 'MarkerFaceColor', [0.969 0.816 0.125],...
     'MarkerEdgeColor', 'none');
 
 % El siguiente paso es añadir otras lineas al gráfico
@@ -51,7 +51,8 @@ plot(x, log(x), '--g', 'Linewidth', 1.5);
 
 hold off
 
-title({'Múltiples gráficos', 'enero 2025'});
+title({'Múltiples gráficos'});
+subtitle({'enero 2025', 'hola'})
 
 legend({'Seno', 'Coseno', 'ln'}, 'Location', 'northwest');
 

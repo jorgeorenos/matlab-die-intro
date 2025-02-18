@@ -28,6 +28,8 @@ figure();
 set(gcf, 'defaultaxesfontsize', 12, ...
     'Position', [350 120 1000 700]);
 
+axes();
+
 % Utilizamos el ciclo para graficar
 for i = 1:10
    plot(y.(strcat('y_', num2str(i))));

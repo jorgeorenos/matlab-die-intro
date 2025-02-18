@@ -63,5 +63,7 @@ set(plt(1), 'color', [0 0 1]);
 set(plt(2), 'color', [1 0 0]);
 
 title('Índice de Precios de Importaciones EEUU',...
-    strcat(dat2char(mm(2005, 1)),...
-    '-',dat2char(mm(2024, 8))));
+    strcat(dat2str(mm(2005, 1)),...
+    '-',dat2str(mm(2024, 8))));
+
+saveas(gcf, fullfile('JGOR', 'prueba.png'));
